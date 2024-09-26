@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Fonction pour ajouter un produit au panier
     function addToCart(produit, quantity = 1) { // Ajouter un produit au panier
+        console.log(`Adding ${quantity} of ${produit.nom} to cart`);
         for (let i = 0; i < quantity; i++) { // itérer le nombre de fois indiqué par l'utilisateur
             cart.push(produit); // Ajouter le produit au panier dans le tableau
         }
